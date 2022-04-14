@@ -17,7 +17,12 @@ class FormController extends Controller
         $post->main = $request->main;
         $post->save();
         
-        return redirect ('/create');
+        //return redirect ('/create');
        }
+
+       public function index (Request $request){
+        $data = Form::all();
+        return view('post')->with(['data' => $data]);
+      }
 }
 
