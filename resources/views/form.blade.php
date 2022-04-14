@@ -23,6 +23,10 @@
             <textarea name="main" cols="40" rows="10"></textarea>
 
             <p>&nbsp;</p>
+            <p>画像をアップロード</p>
+            <input type="file" name="post_img">
+
+            <p>&nbsp;</p>
             <input type="submit" class="submitbtn">
         </form>
 
