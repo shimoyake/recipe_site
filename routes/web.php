@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// 投稿ページを表示
+Route::get('/create', 'FormController@postpage');
+// 投稿をコントローラーに送信
+Route::post('/newpostsend', 'FormController@savenew'); 
