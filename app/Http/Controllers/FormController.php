@@ -22,8 +22,13 @@ class FormController extends Controller
 
        public function index (Request $request){
             //投稿を新着順にする
-            $data = Form::orderBy('created_at', 'desc')->paginate(5);
+            $data = Form::orderBy('created_at', 'desc')->paginate(3);
             return view('post')->with(['data' => $data]);
+      }
+
+      public function show ($id){    
+        $data = Form::where('id', $id)->first();
+        return view('show')->with(['data' => $data]);
       }
 }
 

@@ -82,3 +82,16 @@ hr{margin: 20px 0;}
     text-align: center;
     padding: 10px;
 } 
+
+/* ページ送り */
+.flex {
+    text-align: center;
+}
+
+.flex li{
+    display: inline-block;
+}
+
+.w-5{
+    height: 20px;
+}
