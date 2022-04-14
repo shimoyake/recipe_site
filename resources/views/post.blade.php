@@ -6,30 +6,34 @@
         <title>Laravel</title>
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
     </head>
+
     <body>
     <div class="wrapper">
         <div class="header">
-            <h1>Laraサイト</h1>
+            <h1>オウチレシピ</h1>
         </div>
-
-        @foreach($data as $datas)
-        <div class="content">
-        <h1><a href="/show/{{$datas->id}}">{{$datas->title}}</a></h1>
-        <hr>
-        <p>{!! nl2br($datas->main) !!}</p>
-
-        @if(file_exists(public_path().'/storage/post_img/'. $datas->id .'.jpg'))
-            <img src="/storage/post_img/{{ $datas->id }}.jpg">
-        @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.jpeg'))
-            <img src="/storage/post_img/{{ $datas->id }}.jpeg">
-        @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.png'))
-            <img src="/storage/post_img/{{ $datas->id }}.png">
-        @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.gif'))
-            <img src="/storage/post_img/{{ $datas->id }}.gif">
-        @endif
-
+        
+        <div class ="container">
+            @foreach($data as $datas)
+            <div class="item">    
+                <div class="grid">
+                    <div class="recipe-img">
+                        @if(file_exists(public_path().'/storage/post_img/'. $datas->id .'.jpg'))
+                            <img src="/storage/post_img/{{ $datas->id }}.jpg">
+                        @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.jpeg'))
+                            <img src="/storage/post_img/{{ $datas->id }}.jpeg">
+                        @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.png'))
+                            <img src="/storage/post_img/{{ $datas->id }}.png">
+                        @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.gif'))
+                            <img src="/storage/post_img/{{ $datas->id }}.gif">
+                        @endif
+                    </div>
+                    <p><a href="/show/{{$datas->id}}">{{$datas->title}}</a></p>
+                    <p>{!! nl2br($datas->main) !!}</p>
+                </div>
+            </div>
+            @endforeach
         </div>
-        @endforeach
 
         {{ $data->links() }}
 
