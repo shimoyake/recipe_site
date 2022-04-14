@@ -13,7 +13,7 @@
     <div class="content_wrapper">
     <div class="content2">
 
-        <form action="/newpostsend" method="post">
+        <form action="/newpostsend" method="post" enctype="multipart/form-data">
             @csrf
             <p>タイトル</p>
             <input type="text" name="title" class="formtitle">
