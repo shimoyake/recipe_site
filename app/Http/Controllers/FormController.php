@@ -17,7 +17,7 @@ class FormController extends Controller
             $post->main = $request->main;
             $post->save();
         
-        //return redirect ('/create');
+        return redirect ('/index');
        }
 
        public function index (Request $request){
