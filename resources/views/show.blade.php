@@ -11,13 +11,10 @@
         <div class="header">
             <h1>Laraサイト</h1>
         </div>
-        <div class="sidebar">
-            <p>ここがサイドバー</p>
-        </div>
 
         <div class="content3">
         <p class="created">{{$data->created_at}}</p>
-        <h1>{{$data->title}}</h1>
+        <h1><a href="/show/{{$datas->id}}">{{$datas->title}}</a></h1>
         <hr>
         <p>{!! nl2br($data->main)!!}</p>
 

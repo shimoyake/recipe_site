@@ -11,9 +11,6 @@
         <div class="header">
             <h1>Laraサイト</h1>
         </div>
-        <div class="sidebar">
-            <p>ここがサイドバー</p>
-        </div>
 
         @foreach($data as $datas)
         <div class="content">
