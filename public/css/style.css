@@ -68,7 +68,7 @@ hr{margin: 20px 0;}
 .content{
     text-align: center;
     width:690px;
-    min-height:500px;
+    /* min-height:500px; */
     background-color: #ffffff;
     border: 5px solid  #707aff;
     border-radius: 10px;
