@@ -1,0 +1,84 @@
+/* CSS Reset */
+*,*::before,*::after{box-sizing:border-box}ul[class],ol[class]{padding:0}body,h1,h2,h3,h4,p,ul[class],ol[class],figure,blockquote,dl,dd{margin:0}body{min-height:100vh;scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5}ul[class],ol[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}article>*+*{margin-top:1em}input,button,textarea,select{font:inherit}img:not([alt]){filter:blur(10px)}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+
+/* iOS デフォルトスタイルのリセット */
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+
+.define-text1 br{
+    margin-bottom: 10px;
+}
+html, body {
+    background-color: #fff;
+    color: #3c4447;
+    font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    /* viewpointに対して100%の意味 */
+}
+h3{
+    font-weight: 200;
+}
+b{font-weight: bold;}
+hr{margin: 20px 0;}
+
+.wrapper{
+    width: 1000px;
+    background-color: #20f3f3;
+    min-height:700px;
+    /* border: 1px solid #ccc; */
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #707aff;
+    margin: 0 0 10 0px;
+    height: 100px;
+    padding: 20px;
+}
+
+.sidebar{
+    margin:20px;
+    background-color: #ffffff;
+    border: 2px solid #707aff;
+    border-radius: 10px;
+    width: 250px;
+    min-height:500px;
+    float: right;
+    padding: 10px;
+}
+
+.content{
+    text-align: center;
+    width:690px;
+    min-height:500px;
+    background-color: #ffffff;
+    border: 5px solid  #707aff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.footer{
+    background-color: #707aff;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+} 
