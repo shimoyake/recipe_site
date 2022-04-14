@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 // 投稿ページを表示
-Route::get('/create', 'FormController@postpage');
+Route::get('/create', 'App\Http\Controllers\FormController@postpage');
 // 投稿をコントローラーに送信
-Route::post('/newpostsend', 'FormController@savenew'); 
+Route::post('/newpostsend', 'App\Http\Controllers\FormController@savenew'); 
