@@ -13,11 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout');
 });
-*/
 
 // 投稿ページを表示
 Route::get('/create', 'App\Http\Controllers\FormController@postpage');
