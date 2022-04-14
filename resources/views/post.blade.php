@@ -23,6 +23,8 @@
         </div>
         @endforeach
 
+        {{ $data->links() }}
+
         <div class="footer">
             <p>お問い合わせ</p>
         </div>
