@@ -19,7 +19,7 @@
         <div class="content">
         <h1>{{$datas->title}}</h1>
         <hr>
-        <p>{{$datas->main}}</p>
+        <p>{!! nl2br($datas->main) !!}</p>
         </div>
         @endforeach
 
