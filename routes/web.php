@@ -25,3 +25,4 @@ Route::get('/create', 'App\Http\Controllers\FormController@postpage');
 Route::post('/newpostsend', 'App\Http\Controllers\FormController@savenew'); 
 // 投稿一覧を表示する
 Route::get('/index', 'App\Http\Controllers\FormController@index');
+Route::get('/show/{id}', 'App\Http\Controllers\FormController@show');
