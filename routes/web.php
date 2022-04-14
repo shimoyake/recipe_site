@@ -24,4 +24,4 @@ Route::get('/create', 'App\Http\Controllers\FormController@postpage');
 // 投稿をコントローラーに送信
 Route::post('/newpostsend', 'App\Http\Controllers\FormController@savenew'); 
 // 投稿一覧を表示する
-Route::get('/index', 'FormController@index');
+Route::get('/index', 'App\Http\Controllers\FormController@index');
