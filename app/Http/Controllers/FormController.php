@@ -21,7 +21,7 @@ class FormController extends Controller
        }
 
        public function index (Request $request){
-        $data = Form::all();
+        $data = Form::orderBy('created_at', 'desc')->get();
         return view('post')->with(['data' => $data]);
       }
 }
