@@ -12,17 +12,18 @@ class FormController extends Controller
        }
        
        public function savenew (Request $request){
-        $post = new Form;
-        $post->title = $request->title;
-        $post->main = $request->main;
-        $post->save();
+            $post = new Form;
+            $post->title = $request->title;
+            $post->main = $request->main;
+            $post->save();
         
         //return redirect ('/create');
        }
 
        public function index (Request $request){
-        $data = Form::orderBy('created_at', 'desc')->get();
-        return view('post')->with(['data' => $data]);
+            //投稿を新着順にする
+            $data = Form::orderBy('created_at', 'desc')->limit(5)->get();
+            return view('post')->with(['data' => $data]);
       }
 }
 
