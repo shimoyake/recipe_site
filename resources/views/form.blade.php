@@ -1,13 +1,7 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>newsite</title>
-<!-- Styles -->
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-</head>
-<body>
+@extends("base")
+
+@section("main")
+
     <div class="wrapper">
     <div class="header"><h1>投稿ページ</h1></div>
     <div class="content_wrapper">
@@ -33,5 +27,4 @@
     </div>
     </div>
     </div>
-</body>
-</html> 
+    @endsection

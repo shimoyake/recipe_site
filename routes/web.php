@@ -28,4 +28,4 @@ Route::get('/index', 'App\Http\Controllers\FormController@index');
 Route::get('/show/{id}', 'App\Http\Controllers\FormController@show');
 Route::get('/edit/{id}', 'App\Http\Controllers\FormController@edit');
 Route::put('/edit/{id}', 'App\Http\Controllers\FormController@update');
-Route::delete('/edit/{id}', 'App\Http\Controllers\FormController@destroy');
+Route::delete('/index', 'App\Http\Controllers\FormController@destroy');
