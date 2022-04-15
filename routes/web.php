@@ -26,6 +26,3 @@ Route::post('/newpostsend', 'App\Http\Controllers\FormController@savenew');
 // 投稿一覧を表示する
 Route::get('/index', 'App\Http\Controllers\FormController@index');
 Route::get('/show/{id}', 'App\Http\Controllers\FormController@show');
-Route::get('/edit/{id}', 'App\Http\Controllers\FormController@edit');
-Route::put('/edit/{id}', 'App\Http\Controllers\FormController@update');
-Route::delete('/index', 'App\Http\Controllers\FormController@destroy');
