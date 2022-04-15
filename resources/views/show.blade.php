@@ -15,15 +15,9 @@
             <img src="/storage/post_img/{{ $data->id }}.png">
         @elseif(file_exists(public_path().'/storage/post_img/'. $data->id .'.gif'))
             <img src="/storage/post_img/{{ $data->id }}.gif">
+        @else (empty($datas->post_img))
+            <p>No image</p>
         @endif
         </div>
-
-        <a class="btn btn-outline-success" href="/edit/{{$data->id}}">編集</a>
-
-                <form action="{{$data->id}}/" method="POST" style="display:inline-block;">
-                    {{ csrf_field() }}
-                    {{ method_field("delete") }}
-                    <button class="btn btn-outline-danger" type="submit">削除</button>
-                </form>
         
-                @endsection
+        @endsection
