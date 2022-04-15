@@ -20,7 +20,7 @@
 
             <p>&nbsp;</p>
             <p>本文</p>
-            <textarea name="main" cols="40" rows="10"></textarea>
+            <textarea name="foods" cols="40" rows="10"></textarea>
 
             <p>&nbsp;</p>
             <p>画像をアップロード</p>

@@ -8,38 +8,50 @@
     </head>
 
     <body>
-    <div class="wrapper">
+        
         <div class="header">
             <h1>オウチレシピ</h1>
         </div>
-        
-        <div class ="container">
+
+        <div class="wrapper">
+            <div class="container">
             @foreach($data as $datas)
-            <div class="item">    
-                <div class="grid">
-                    <div class="recipe-img">
-                        @if(file_exists(public_path().'/storage/post_img/'. $datas->id .'.jpg'))
-                            <img src="/storage/post_img/{{ $datas->id }}.jpg">
-                        @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.jpeg'))
-                            <img src="/storage/post_img/{{ $datas->id }}.jpeg">
-                        @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.png'))
-                            <img src="/storage/post_img/{{ $datas->id }}.png">
-                        @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.gif'))
-                            <img src="/storage/post_img/{{ $datas->id }}.gif">
-                        @endif
-                    </div>
-                    <p><a href="/show/{{$datas->id}}">{{$datas->title}}</a></p>
-                    <p>{!! nl2br($datas->main) !!}</p>
+            <section class="card">
+                <div class="card-img">
+                    @if(file_exists(public_path().'/storage/post_img/'. $datas->id .'.jpg'))
+                        <img src="/storage/post_img/{{ $datas->id }}.jpg">
+                    @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.jpeg'))
+                        <img src="/storage/post_img/{{ $datas->id }}.jpeg">
+                    @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.png'))
+                        <img src="/storage/post_img/{{ $datas->id }}.png">
+                    @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.gif'))
+                        <img src="/storage/post_img/{{ $datas->id }}.gif">
+                    @endif
+                </div>
+
+                <div class="card-content">
+                    <h1 class="card-title"><a href="/show/{{$datas->id}}">{{$datas->title}}</a></h1>
+                    <p class="card-text">{!! nl2br($datas->foods) !!}</p>
+                </div>
+
+                
+            </section>   
+            @endforeach
+            </div>
+            {{ $data->links() }}
+
+            <div class="side">
+                <div class="side_bar new_button">新規作成</div>
+                <div class="side_bar">
+                    サイドバーです
                 </div>
             </div>
-            @endforeach
         </div>
-
-        {{ $data->links() }}
+            
 
         <div class="footer">
             <p>お問い合わせ</p>
         </div>
-    </div>
+    
     </body>
 </html>

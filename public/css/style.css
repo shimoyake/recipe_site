@@ -26,7 +26,7 @@ input[type="button"]::focus {
 html, body {
     background-color: #fff;
     color: #3c4447;
-    font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font: 15px verdana,"ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
     font-weight: 200;
     height: 100vh;
     /* viewpointに対して100%の意味 */
@@ -38,10 +38,9 @@ b{font-weight: bold;}
 hr{margin: 20px 0;}
 
 .wrapper{
-    width: 1000px;
-    min-height:700px;
-    /* border: 1px solid #ccc; */
     margin: 0 auto;
+    width: 90%;
+    display: flex;
 }
 
 .header{
@@ -102,7 +101,60 @@ hr{margin: 20px 0;}
     padding: 1%;
     text-align: center;
 }
+
+/*カードのレイアウト*/
 .container{
     display: flex;
     flex-wrap: wrap;
+    width: 95%;
 }
+.card {
+    width: 29.3%;
+    min-height:300px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: aquamarine;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+  }
+  .card-img img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: auto;
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  .card-text {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .side{
+    width: 29.3%;
+    float: right;
+  }
+
+  .side_bar {
+    min-height:500px;
+    background-color:#ff838b;
+    text-align:center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    margin: 1%;
+    padding: 1%;
+  } 
+
+  .new_button{
+    min-height:100px;
+      
+ }
