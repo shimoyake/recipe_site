@@ -10,7 +10,8 @@
     <body>
         
         <div class="header">
-            <h1>オウチレシピ</h1>
+            <a href="/index"><h1>オウチレシピ</h1></a>
+            <p>自分用のレシピメモを作ろう</p>
         </div>
 
         <div class="wrapper">
@@ -19,15 +20,19 @@
             <!--ページごとに表示を内容を変える部分-->
 
             <div class="side">
-                <div class="side_bar new_button">新規作成</div>
+                <div class="side_bar new_button">
+                    <a href="/create">
+                        <img src="https://icon-pit.com/wp-content/uploads/2019/02/memo_pen_icon_4641-300x300.png">
+                        <p>新規作成</p></div>
+                    </a>
                 <div class="side_bar">
-                    サイドバーです
+                    <p>機能追加予定<br>comming<br>soon</p>
                 </div>
             </div>
         </div>
             
         <div class="footer">
-            <p>お問い合わせ</p>
+            <p>2022/オウチレシピ</p>
         </div>
     
     </body>

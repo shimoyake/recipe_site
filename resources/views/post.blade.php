@@ -15,7 +15,7 @@
                         @elseif(file_exists(public_path().'/storage/post_img/'. $datas->id .'.gif'))
                             <img src="/storage/post_img/{{ $datas->id }}.gif">
                         @else (empty($datas->post_img))
-                            <p>No image</p>
+                            <img src="https://www.shoshinsha-design.com/wp-content/uploads/2020/05/noimage-760x460.png">
                         @endif
                     </div>
 

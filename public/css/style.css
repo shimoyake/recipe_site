@@ -24,7 +24,7 @@ input[type="button"]::focus {
     margin-bottom: 10px;
 }
 html, body {
-    background-color: #fff;
+    background-color: #fff9e9;
     color: #3c4447;
     font: 15px verdana,"ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
     font-weight: 200;
@@ -34,8 +34,15 @@ html, body {
 h3{
     font-weight: 200;
 }
-b{font-weight: bold;}
-hr{margin: 20px 0;}
+b{
+    font-weight: bold;
+}
+hr{
+    margin: 20px 0;
+}
+a {
+    text-decoration: none;
+}
 
 .wrapper{
     margin: 0 auto;
@@ -44,31 +51,15 @@ hr{margin: 20px 0;}
 }
 
 .header{
-    margin: 0 0 10 0px;
     height: 100px;
-    padding: 20px;
-}
-
-.sidebar{
-    margin:20px;
-    background-color: #ffffff;
-    border: 2px solid #707aff;
-    border-radius: 10px;
-    width: 250px;
-    min-height:500px;
+    padding: 5%;
+    margin-right: 5%;
+    display: block;
+    align-items: center;
     float: right;
-    padding: 10px;
 }
-
-.content{
-    text-align: center;
-    width:690px;
-    /* min-height:500px; */
-    background-color: #ffffff;
-    border: 5px solid  #707aff;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 10px;
+.header a{
+    color: #333;
 }
 
 .footer{
@@ -95,7 +86,7 @@ hr{margin: 20px 0;}
 .item{
     display: block; 
     width: 29.3%;
-    background-color: aquamarine;
+    background-color: #d8c5ae;
     margin: 1%;
     padding: 1%;
     text-align: center;
@@ -113,7 +104,6 @@ hr{margin: 20px 0;}
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px #ccc;
-    background-color: aquamarine;
     margin: 1%;
     padding: 1%;
     text-align: center;
@@ -121,7 +111,7 @@ hr{margin: 20px 0;}
   .card-img img{
     border-radius: 5px 5px 0 0;
     width: 100%;
-    height: auto;
+    max-height: 170px
   }
   .card-content {
     padding: 20px;
@@ -141,19 +131,42 @@ hr{margin: 20px 0;}
   .side{
     width: 29.3%;
     float: right;
+    margin: 1%;
   }
 
   .side_bar {
     min-height:500px;
-    background-color:#777;
+    background-color:#d8c5ae;
     text-align:center;
     border-radius: 5px;
     box-shadow: 0 2px 5px #ccc;
     margin: 1%;
     padding: 1%;
   } 
-
+  .side_bar img{
+      width: 60%;
+  }
+  .side_bar p{
+    color: #fff;
+    font-size: 20px;
+}
   .new_button{
     min-height:150px;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+ }
+
+ /*showページ*/
+ .content{
+    text-align: center;
+    width: 90%;
+    border: 5px solid #d8c5ae;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 2%;
+}
+
+ .content img{
+    width: 80%;
  }
