@@ -71,6 +71,8 @@ a {
 /* ページ送り */
 .flex {
     text-align: center;
+    margin: 0 auto;
+    padding: 2%;
 }
 .flex li{
     display: inline-block;

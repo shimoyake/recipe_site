@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
+        <title>オウチレシピ</title>
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
     </head>
 
@@ -22,7 +22,7 @@
             <div class="side">
                 <div class="side_bar new_button">
                     <a href="/create">
-                        <img src="https://icon-pit.com/wp-content/uploads/2019/02/memo_pen_icon_4641-300x300.png">
+                        <img src="https://icon-pit.com/wp-content/uploads/2021/02/recipe-book_16113-300x300.png">
                         <p>新規作成</p></div>
                     </a>
                 <div class="side_bar">
@@ -32,7 +32,6 @@
         </div>
             
         <div class="footer">
-            <p>2022/オウチレシピ</p>
         </div>
     
     </body>

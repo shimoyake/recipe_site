@@ -26,8 +26,9 @@
                     
                 </section>   
             @endforeach
+            {{ $data->links() }}
         </div>
 
-            {{ $data->links() }}
+            
 
     @endsection
