@@ -34,6 +34,14 @@
                     <p class="card-text">{!! nl2br($datas->foods) !!}</p>
                 </div>
 
+                <a class="btn btn-outline-success" href="/edit/{{$datas->id}}">編集</a>
+
+                <form action="{{$datas->id}}/" method="POST" style="display:inline-block;">
+                    {{ csrf_field() }}
+                    {{ method_field("delete") }}
+                    <button class="btn btn-outline-danger" type="submit">削除</button>
+                </form>
+
                 
             </section>   
             @endforeach

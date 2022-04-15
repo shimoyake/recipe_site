@@ -41,5 +41,32 @@ class FormController extends Controller
         $data = Form::where('id', $id)->first();
         return view('show')->with(['data' => $data]);
       }
+
+      public function edit($id)
+    {
+        $datas     = Form::where("id",$id)->get();
+        $context    = [ "datas" => $datas ];
+
+        return view("edit",$context);
+    }
+
+      public function update(CreateTopicRequest $request, $id)
+      {
+  
+          #編集処理のベストプラクティス
+          Form::find($id)->update($request->all());
+  
+          return redirect(route("/index"));
+      }
+
+        public function destroy($id)
+        {
+
+            #削除のベストプラクティス
+            Form::destroy($id);
+
+            return redirect(route("/index"));
+        }
+
 }
 
