@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+// 投稿ページを表示
+Route::get('/create', 'App\Http\Controllers\FormController@postpage');
+// 投稿をコントローラーに送信
+Route::post('/newpostsend', 'App\Http\Controllers\FormController@savenew'); 
+// 投稿一覧を表示する
+Route::get('/index', 'App\Http\Controllers\FormController@index');
+Route::get('/show/{id}', 'App\Http\Controllers\FormController@show');

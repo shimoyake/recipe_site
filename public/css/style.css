@@ -1,0 +1,174 @@
+
+/* iOS デフォルトスタイルのリセット */
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+
+.define-text1 br{
+    margin-bottom: 10px;
+}
+html, body {
+    background-color: #fff9e9;
+    color: #3c4447;
+    font: 15px verdana,"ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+    font-weight: 200;
+    height: 100vh;
+    /* viewpointに対して100%の意味 */
+}
+h3{
+    font-weight: 200;
+}
+b{
+    font-weight: bold;
+}
+hr{
+    margin: 20px 0;
+}
+a {
+    text-decoration: none;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+}
+
+.header{
+    height: 100px;
+    padding: 5%;
+    margin-right: 5%;
+    display: block;
+    align-items: center;
+    float: right;
+}
+.header a{
+    color: #333;
+}
+
+.footer{
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+} 
+
+/* ページ送り */
+.flex {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2%;
+}
+.flex li{
+    display: inline-block;
+}
+.w-5{
+    height: 20px;
+}
+
+/*投稿の配置*/
+.recipe-img img{
+    width : 100%;
+}
+.item{
+    display: block; 
+    width: 29.3%;
+    background-color: #d8c5ae;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+}
+
+/*カードのレイアウト*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+.card {
+    width: 29.3%;
+    min-height:300px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+  }
+  .card-img img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    max-height: 170px
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  .card-text {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .side{
+    width: 29.3%;
+    float: right;
+    margin: 1%;
+  }
+
+  .side_bar {
+    min-height:500px;
+    background-color:#d8c5ae;
+    text-align:center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ccc;
+    margin: 1%;
+    padding: 1%;
+  } 
+  .side_bar img{
+      width: 60%;
+  }
+  .side_bar p{
+    color: #fff;
+    font-size: 20px;
+}
+  .new_button{
+    min-height:150px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+ }
+
+ /*showページ*/
+ .content{
+    text-align: center;
+    width: 90%;
+    border: 5px solid #d8c5ae;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 2%;
+}
+
+ .content img{
+    width: 80%;
+ }
